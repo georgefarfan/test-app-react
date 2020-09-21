@@ -8,10 +8,7 @@ class Histograma extends Component{
   }
  
   counter(items, keys) {
-
     let values = [];
-
-    
     if (items && keys) { 
         keys.forEach(key => {
             let occurrences = items.filter(item => item === key).length;
@@ -44,8 +41,6 @@ class Histograma extends Component{
   }
 
   render() {
-      
- 
     return (
       <div className="Histograma">
            { this.counter(this.props.items.values,this.props.keys) }
