@@ -1,0 +1,10 @@
+
+.Histograma {
+    display: flex;
+    flex-direction: column;
+}
+
+.values {
+    display: flex;
+}
+ 
