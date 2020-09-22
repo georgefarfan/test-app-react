@@ -25,14 +25,12 @@ class Histograma extends Component{
         });
         let html = values.map((d) => 
         <div key={d.key} className="values"> 
-               
                <div className="key">
                {d.key}: 
                </div>
                <div className="occurrences">
                {d.occurrences} 
                </div>
-        
         </div>);
         return html;
     } else {
@@ -47,7 +45,6 @@ class Histograma extends Component{
       </div>
     )
   }
-
 
 }
 

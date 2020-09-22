@@ -1,36 +1,17 @@
-import React, { Component } from 'react'; 
-import Histograma from './components/ej-1/Histograma';
-import MatrixX from './components/eje-2/MatrixX';
-
-import './App.css';
-
-const KEYS = ["1", "2", "3", "4", "5"]; 
+import React, { Component } from 'react';   
+import Eje1 from './components/ej-1/ej-1';
+import Eje2 from './components/eje-2/eje-2';
 
 class App extends Component{
   constructor() {
     super();
-    this.state = {};
-    this.onInputchange = this.onInputchange.bind(this);   
   }
-
  
-  onInputchange(event) { 
-    this.setState({
-      values: event.target.value.split('')
-    });
-  }
-
   render() {
     return (
       <div className="App">
-        <h4>Ejercicio 1</h4>
-        <input
-            onChange={this.onInputchange}
-        ></input>
-        <Histograma items={this.state} keys={KEYS}></Histograma>
-        <h4>Ejercicio 2</h4>
-  
-        <MatrixX value={this.state}></MatrixX>
+        <Eje1></Eje1>
+        <Eje2></Eje2>
       </div>
     )
   }
